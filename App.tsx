@@ -1,5 +1,5 @@
 import { Slide1, Slide2, Slide3, Slide4 } from "./src/screens"
-import { Coiny_400Regular, useFonts } from '@expo-google-fonts/coiny';
+import { useFonts, FjordOne_400Regular } from '@expo-google-fonts/fjord-one';
 import { Dispatch, SetStateAction, useState } from "react";
 import { Text } from "react-native";
 export interface IPage{
@@ -8,10 +8,10 @@ export interface IPage{
 }
 
 export default function App() {
-  const [page, setPage] = useState(1) 
-  let[fontsLoaded] = useFonts({
-    Coiny_400Regular
-  })
+  const [page, setPage] = useState(1)
+  let [fontsLoaded] = useFonts({
+    FjordOne_400Regular,
+  });
   if (!fontsLoaded){
     return null
   }

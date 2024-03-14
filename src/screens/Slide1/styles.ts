@@ -21,5 +21,6 @@ export const styles = StyleSheet.create({
         fontSize: 40,
         textAlign: 'center',
         color: colors.primary,
+        fontFamily: 'FjordOne_400Regular',
     },
 })
